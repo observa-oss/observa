@@ -139,7 +139,7 @@ sequenceDiagram
     W-->>T: Accepted
 ```
 
-What is stored for each event: tenant and website identifiers, a timestamp, the page path, referrer, country, device type, browser and operating system, the daily visitor hash, and the event name and properties if it is a custom event. No cookies are set, and nothing is stored in the visitor's browser.
+What is stored for each event: tenant and website identifiers, a timestamp, the page path (query strings removed by default), referrer, country, device type, browser and operating system, the daily visitor hash, and the event name and properties if it is a custom event. Umami also collects screen size, browser language and page titles by default, and resolves region and city. Observa stores country only and treats the other fields as open privacy decisions. No cookies are set, and nothing is stored in the visitor's browser. The full list is in [privacy.md](privacy.md#data-collected-web-analytics).
 
 ### Optional Stellar Wallets Kit events
 
@@ -349,7 +349,7 @@ All data is planned to be stored and processed in the EU. The proposed hosting p
 
 ### No cookies and no device storage
 
-The tracker sets no cookies and writes nothing to local storage or similar browser storage. Without device storage or personal data, the design aims for GDPR compliance without a client-side consent banner. Tenants remain responsible for their own legal assessment. A data processing agreement template and an independent legal review are listed as open decisions.
+The tracker sets no cookies and writes nothing to local storage or similar browser storage. Without device storage or personal data, the design aims for GDPR compliance without a client-side consent banner. The tracker does read some browser properties (such as screen size and language), which may fall under ePrivacy rules depending on interpretation; this is part of the planned legal review (see [privacy.md](privacy.md#lawful-basis-and-consent)). Tenants remain responsible for their own legal assessment.
 
 ### IP address handling
 

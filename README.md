@@ -50,13 +50,13 @@ Any Stellar project can enrol itself. Verification is planned through the projec
 
 ## Privacy principles
 
-- No cookies, and no client-side consent banner needed for GDPR compliance
+- No cookies or device storage; designed so that no consent banner is needed (subject to legal review)
 - IP addresses are truncated before geolocation and never stored raw
 - Unique visitors are counted with a salted hash that rotates daily, so visitors can't be followed across days
 - Data is hosted in the EU (proposed: Hetzner, Germany)
 - The design goal is to store no personal data that would be subject to erasure requests. If any is stored, tenants get an erasure workflow.
 
-See [docs/architecture.md](docs/architecture.md#privacy-and-gdpr-approach) for details.
+See [docs/privacy.md](docs/privacy.md) for what is collected, retention and GDPR roles, and [docs/architecture.md](docs/architecture.md#privacy-and-gdpr-approach) for the technical design.
 
 ## System overview
 
@@ -125,7 +125,7 @@ The project is at an early stage. Issues and discussion are welcome. Contributio
 
 ## Security
 
-Please do not report security issues in public issues. Contact: `security@<to be confirmed>` (placeholder). A full security policy (`SECURITY.md`) is planned.
+Please do not report security issues in public issues. See [SECURITY.md](SECURITY.md) for how to report a vulnerability, and [docs/security.md](docs/security.md) for the planned security design.
 
 ## Licence
 
