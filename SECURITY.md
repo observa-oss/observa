@@ -6,12 +6,9 @@ Observa is in early development and nothing is deployed yet. We still welcome re
 
 Please do not report security issues in public GitHub issues, discussions or pull requests.
 
-Report them privately by either:
+A dedicated private reporting channel will be set up and published here before Observa goes live. Until then, open a public issue titled "Security contact request" and leave out any details of the vulnerability. A maintainer will reply with a private way to share the report.
 
-- Using GitHub's private vulnerability reporting for this repository (Security tab, then "Report a vulnerability"), or
-- Emailing `security@<to be confirmed>` (placeholder)
-
-Please include a description of the issue, steps to reproduce it, and the affected component or version if known.
+When you send the report, please include a description of the issue, steps to reproduce it, and the affected component or version if known.
 
 ## What to expect
 
